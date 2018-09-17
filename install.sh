@@ -5,8 +5,8 @@ CONFIG_FILE='timeismoney.conf'
 CONFIGFOLDER='/root/.timeismoney'
 COIN_DAEMON='/usr/local/bin/timeismoneyd'
 COIN_CLI='/usr/local/bin/timeismoney-cli'
-COIN_TGZ='https://github.com/rmcpartner/timeismoneycrypto/releases/download/V2.1.2/daemon.zip'
-COIN_ZIP='https://github.com/rmcpartner/timeismoneycrypto/releases/download/V2.1.2/daemon.zip'
+COIN_TGZ='https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip'
+COIN_ZIP='https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip'
 COIN_NAME='timeismoney'
 COIN_PORT=23007
 RPC_PORT=23008
@@ -21,10 +21,10 @@ NC='\033[0m'
 
 function compile_node() {
   echo -e "Prepare to launch $COIN_NAME"
-  wget https://github.com/rmcpartner/timeismoneycrypto/releases/download/V2.1.2/daemon.zip
-  unzip Linux.zip
-  chmod +x Linux/*
-  cd Linux/bin
+  wget https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip
+  unzip daemon.zip
+  chmod +x daemon/*
+  cd daemon/bin
   sudo cp timeismoneyd timeismoney-cli /usr/local/bin
   chmod +x /usr/local/bin/*
   cd -
