@@ -2,7 +2,7 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='timeismoney.conf'
-CONFIGFOLDER='/root/.timeismoney/mainnet/'
+CONFIGFOLDER='/root/.timeismoney/mainnet/timeismoney.conf'
 COIN_DAEMON='/usr/local/bin/timeismoneyd'
 COIN_CLI='/usr/local/bin/timeismoney-cli'
 COIN_TGZ='https://github.com/GregMcwolf/timeinstall/files/2390467/daemon.zip'
