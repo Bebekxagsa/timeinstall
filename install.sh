@@ -2,11 +2,11 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='timeismoney.conf'
-CONFIGFOLDER='/root/.timeismoney'
+CONFIGFOLDER='/root/mainnet/.timeismoney'
 COIN_DAEMON='/usr/local/bin/timeismoneyd'
 COIN_CLI='/usr/local/bin/timeismoney-cli'
-COIN_TGZ='https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip'
-COIN_ZIP='https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip'
+COIN_TGZ='https://github.com/GregMcwolf/timeinstall/files/2390467/daemon.zip'
+COIN_ZIP='https://github.com/GregMcwolf/timeinstall/files/2390467/daemon.zip'
 COIN_NAME='timeismoney'
 COIN_PORT=23007
 RPC_PORT=23008
@@ -21,7 +21,7 @@ NC='\033[0m'
 
 function compile_node() {
   echo -e "Prepare to launch $COIN_NAME"
-  wget https://github.com/GregMcwolf/timeinstall/files/2390223/daemon.zip
+  wget https://github.com/GregMcwolf/timeinstall/files/2390467/daemon.zip
   unzip daemon.zip
   chmod +x daemon/*
   cd daemon/bin
